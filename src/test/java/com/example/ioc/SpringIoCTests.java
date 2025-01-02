@@ -10,13 +10,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan
-class ConfigurationTests {
+class SpringIoCTests {
 
 	@Test
 	public void configuration_test(){
 		// arrange
 		ApplicationContext ctx =
-				new AnnotationConfigApplicationContext(ConfigurationTests.class);
+				new AnnotationConfigApplicationContext(SpringIoCTests.class);
 		Car car = ctx.getBean(Car.class);
 
 		// Assert Car.getId = 100
@@ -29,7 +29,7 @@ class ConfigurationTests {
 	public void car_component_test(){
 		// arrange
 		ApplicationContext ctx =
-				new AnnotationConfigApplicationContext(ConfigurationTests.class);
+				new AnnotationConfigApplicationContext(SpringIoCTests.class);
 		Car car = ctx.getBean(Car.class);
 
 		// Assert Car.getId = 100
@@ -42,7 +42,7 @@ class ConfigurationTests {
 	public void  student_repository_test(){
 		// arrange
 		ApplicationContext ctx =
-				new AnnotationConfigApplicationContext(ConfigurationTests.class);
+				new AnnotationConfigApplicationContext(SpringIoCTests.class);
 		StudentEntity studentEntity = ctx.getBean(StudentEntity.class);
 		// assert
 		Assertions.assertEquals(123456 , studentEntity.getId());
@@ -54,7 +54,7 @@ class ConfigurationTests {
 	public void  sales_service_test(){
 		// arrange
 		ApplicationContext ctx =
-				new AnnotationConfigApplicationContext(ConfigurationTests.class);
+				new AnnotationConfigApplicationContext(SpringIoCTests.class);
 		SalesService service = ctx.getBean(SalesService.class);
 		// assert
 		Assertions.assertEquals("SalesService", service.getMyService());
