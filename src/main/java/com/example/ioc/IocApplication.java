@@ -1,6 +1,6 @@
 package com.example.ioc;
 
-import com.example.ioc.enyity.Car;
+import com.example.ioc.basic.enyity.Car;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;

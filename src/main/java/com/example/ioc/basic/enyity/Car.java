@@ -1,4 +1,4 @@
-package com.example.ioc.enyity;
+package com.example.ioc.bsaic.enyity;
 
 public class Car {
 
