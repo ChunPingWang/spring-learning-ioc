@@ -1,4 +1,4 @@
-package com.example.ioc.bsaic.enyity;
+package com.example.ioc.basic.enyity;
 
 public class SalesService {
    private String myService;

@@ -1,6 +1,6 @@
-package com.example.ioc;
+package com.example.ioc.basic;
 
-import com.example.ioc.enyity.StudentEntity;
+import com.example.ioc.basic.enyity.StudentEntity;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
@@ -16,6 +16,10 @@ class SpringIoCRepositoryTests {
 		ApplicationContext ctx =
 				new AnnotationConfigApplicationContext(SpringIoCRepositoryTests.class);
 		StudentEntity studentEntity = ctx.getBean(StudentEntity.class);
+
+		studentEntity.setId(123456);
+		studentEntity.setName("John");
+
 		// assert
 		Assertions.assertEquals(123456 , studentEntity.getId());
 		Assertions.assertEquals("John", studentEntity.getName());

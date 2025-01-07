@@ -1,6 +1,6 @@
-package com.example.ioc.configuration;
+package com.example.ioc.basic.configuration;
 
-import com.example.ioc.enyity.Car;
+import com.example.ioc.basic.enyity.Car;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -9,9 +9,6 @@ public class CarComponentBeans {
 
     @Bean
     public Car car(){
-        Car car = new Car();
-        car.setId(100);
-        car.setBrand("Ford");
-        return car;
+        return new Car();
     }
 }

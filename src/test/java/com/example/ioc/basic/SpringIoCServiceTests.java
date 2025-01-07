@@ -1,6 +1,6 @@
-package com.example.ioc;
+package com.example.ioc.basic;
 
-import com.example.ioc.enyity.SalesService;
+import com.example.ioc.basic.enyity.SalesService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;

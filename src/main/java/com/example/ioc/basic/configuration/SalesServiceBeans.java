@@ -1,6 +1,6 @@
-package com.example.ioc.configuration;
+package com.example.ioc.basic.configuration;
 
-import com.example.ioc.enyity.SalesService;
+import com.example.ioc.basic.enyity.SalesService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
